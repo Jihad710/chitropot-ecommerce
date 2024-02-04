@@ -3,13 +3,15 @@ import BreadCrumb from "../Components/BreadCrumb";
 import Meta from "../Components/Meta";
 import { AiFillDelete } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import Container from "../Components/Container";
 const Cart = () => {
   return (
     <>
       <Meta title={"Cart"}></Meta>
       <BreadCrumb title="Your shopping Cart" />
-      <section className="cart-wrapper home-wrapper-2 py-5">
-        <div className="container-xxl">
+      <Container class1="cart-wrapper home-wrapper-2 py-5">
+      
+      
           <div className="row">
             <div className="col-12">
               <div className="cart-header d-flex py-3 mb-2 justify-content-between align-items-center">
@@ -67,8 +69,8 @@ const Cart = () => {
           </div>
         </div>
         </div>
-        </div>
-      </section>
+      
+      </Container>
     </>
   );
 };

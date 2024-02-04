@@ -1,6 +1,11 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
+import compare from "../assets/images/compare.svg";
+import wishlist from "../assets/images/wishlist.svg";
+import user from "../assets/images/user.svg";
+import cart from "../assets/images/cart.svg";
+import menu from "../assets/images/menu.svg";
 
 const Header = () => {
   return (
@@ -50,8 +55,8 @@ const Header = () => {
             <div className="col-5">
               <div className="header-upper-links d-flex align-items-center justify-content-between">
                 <div>
-                  <Link className="d-flex align-items-center gap-10 text-white">
-                    <img src="images/compare.svg" alt="compare"></img>
+                  <Link to="/compare-product" className="d-flex align-items-center gap-10 text-white">
+                    <img src={compare} alt="compare"></img>
                     <p className="mb-0">
                       Compare <br />
                       Products
@@ -59,24 +64,24 @@ const Header = () => {
                   </Link>
                 </div>
                 <div>
-                  <Link className="d-flex align-items-center gap-10 text-white">
-                    <img src="images/wishlist.svg" alt="wishlist"></img>
+                  <Link to="/wishlist" className="d-flex align-items-center gap-10 text-white">
+                    <img src={wishlist} alt="wishlist"></img>
                     <p className="mb-0">
                       Favourite <br /> Wishlist
                     </p>
                   </Link>
                 </div>
                 <div>
-                  <Link className="d-flex align-items-center gap-10 text-white">
-                    <img src="images/user.svg" alt="user"></img>
+                  <Link to="/login" className="d-flex align-items-center gap-10 text-white">
+                    <img src={user} alt="user"></img>
                     <p className="mb-0">
                       Log in <br /> My Account
                     </p>
                   </Link>
                 </div>
                 <div>
-                  <Link className="d-flex align-items-center gap-10 text-white">
-                    <img src="images/cart.svg" alt="cart"></img>
+                  <Link to="/cart" className="d-flex align-items-center gap-10 text-white">
+                    <img src={cart} alt="cart"></img>
                     <div className="d-flex flex-column gap-10">
                       <span className="badge bg-white text-dark">0</span>
                       <p className="mb-0">BDT 500</p>
@@ -102,7 +107,7 @@ const Header = () => {
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                     <img src="images/menu.svg" alt=""/> <span className="me-5 inline-block">Shop Categories</span>
+                     <img src={menu} alt=""/> <span className="me-5 inline-block">Shop Categories</span>
                     </button>
                     <ul className="dropdown-menu"
                     aria-labelledby="dropdownMenuButton1"
@@ -128,8 +133,8 @@ const Header = () => {
                 <div className="menu-links">
                   <div className="d-flex align-items-center gap-15">
                     <NavLink to="/">Home</NavLink>
-                    <NavLink to="/">Our Store</NavLink>
-                    <NavLink to="/">Blogs</NavLink>
+                    <NavLink to="/product">Our Store</NavLink>
+                    <NavLink to="/blogs">Blogs</NavLink>
                     <NavLink to="/contact">Contact</NavLink>
                   </div>
                 </div>

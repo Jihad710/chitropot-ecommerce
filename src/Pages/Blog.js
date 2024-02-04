@@ -47,7 +47,7 @@ const Blog = () => {
         </div>
        </Container>
     
-
+{/* new page start here */}
 
     </>
   )

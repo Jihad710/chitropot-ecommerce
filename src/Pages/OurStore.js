@@ -6,6 +6,7 @@ import ProductCard from "../Components/ProductCard";
 import Color from "../Components/Color";
 import watch from "../assets/images/watch.jpg";
 import gr4 from "../assets/images/gr4.svg";
+import Container from "../Components/Container";
 
 const OurStore = () => {
   const [grid, setGrid] = useState(4);
@@ -14,8 +15,8 @@ const OurStore = () => {
     <>
       <Meta title={"Our Store"}></Meta>
       <BreadCrumb title="Our Store" />
-      <div className="store-wrapper py-5 home-wrapper-2">
-        <div className="container-xxl">
+      <Container class1="store-wrapper py-5 home-wrapper-2">
+        
           <div className="row">
             <div className="col-3">
               <div className="filter-card mb-3">
@@ -284,8 +285,8 @@ const OurStore = () => {
             </div>
            
           </div>
-        </div>
-      </div>
+    
+      </Container>
     </>
   );
 };

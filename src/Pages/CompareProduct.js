@@ -4,6 +4,7 @@ import BreadCrumb from "../Components/BreadCrumb";
 import Color from "../Components/Color";
 import cross from '../assets/images/cross.svg';
 import watch from '../assets/images/watch.jpg';
+import Container from "../Components/Container";
 
 const CompareProduct = () => {
   return (
@@ -11,8 +12,8 @@ const CompareProduct = () => {
       <Meta title={"Compare Product"}></Meta>
       <BreadCrumb title="Compare Product" />
 
-      <div className="compare-product-wrapper py-5 home-wrapper-2">
-        <div className="container-xxl">
+      <Container class1="compare-product-wrapper py-5 home-wrapper-2">
+      
           <div className="row">
             {/* compare Product */}
             <div className="col-3">
@@ -106,8 +107,8 @@ const CompareProduct = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </Container>
+    
     </>
   );
 };

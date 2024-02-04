@@ -3,6 +3,7 @@ import Meta from "../Components/Meta";
 import BreadCrumb from "../Components/BreadCrumb";
 import {AiOutlineHome, AiOutlineMail} from 'react-icons/ai';
 import {BiPhoneCall,BiInfoCircle} from 'react-icons/bi';
+import Container from "../Components/Container";
 
 
 const Contact = () => {
@@ -10,8 +11,8 @@ const Contact = () => {
     <>
       <Meta title={"Contact"}></Meta>
       <BreadCrumb title="Contact" />
-      <div className="contact-wrapper py-5 home-wrapper-2">
-        <div className="container-xxl">
+      <Container class1="contact-wrapper py-5 home-wrapper-2">
+       
           <div className="row">
             <div className="col-12">
               <iframe
@@ -93,8 +94,8 @@ const Contact = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </Container>
+      
     </>
   );
 };

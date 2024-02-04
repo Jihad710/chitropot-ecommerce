@@ -11,7 +11,7 @@ const Checkout = () => {
       <Meta title={"checkout"}></Meta>
       <BreadCrumb title="Checkout" />
 
-      <Container className="checkout-wrapper py-5 home-wrapper-2">
+      <Container class1="checkout-wrapper py-5 home-wrapper-2">
 
           <div className="row">
             <div className="col-7">

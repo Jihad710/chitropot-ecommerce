@@ -11,10 +11,11 @@ import Container from "../Components/Container";
 
 const SingleProduct = () => {
   const props = {
-    width: 400,
-    height: 500,
+    width: 594,
+    height: 600,
     zoomWidth: 600,
-    img: "https://cynor.b-cdn.net/wp-content/uploads/2023/12/TL64-11-Multi-color-Stone-Large-Size-Chimney-Design-Turkish-Table-Lamp-1-600x600.jpg",
+
+    img: "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg",
   };
 
   const [orderProduct, setorderProduct] = useState(true);
@@ -27,9 +28,9 @@ const SingleProduct = () => {
           <div className="row">
             <div className="col-6">
               <div className="main-product-image">
-                <div>
-                  <ReactImageZoom {...props} />
-                </div>
+              <div>
+                <ReactImageZoom {...props} />
+              </div>
               </div>
               <div className="other-product-images d-flex flex-wrap gap-15 ">
                 <div>

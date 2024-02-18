@@ -1,7 +1,7 @@
 import React from "react";
 import ReactStars from "react-rating-stars-component";
 import { Link, useLocation } from "react-router-dom";
-import prodcompare from "../assets/images/prodcompare.svg";
+
 import view from "../assets/images/view.svg";
 import cart from "../assets/images/add-cart.svg";
 import wish from "../assets/images/wish.svg";
@@ -63,9 +63,7 @@ const ProductCard = (props) => {
         </div>
         <div className="action-bar position-absolute">
           <div className="d-flex flex-column gap-15">
-            <button className="border-0 bg-transparent">
-              <img src={prodcompare} alt="compare" />
-            </button>
+      
             <button className="border-0 bg-transparent">
               <img src={view} alt="view" />
             </button>
@@ -122,9 +120,7 @@ const ProductCard = (props) => {
         </div>
         <div className="action-bar position-absolute">
           <div className="d-flex flex-column gap-15">
-            <button className="border-0 bg-transparent">
-              <img src={prodcompare} alt="compare" />
-            </button>
+
             <button className="border-0 bg-transparent">
               <img src={view} alt="view" />
             </button>

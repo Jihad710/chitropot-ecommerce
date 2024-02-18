@@ -3,7 +3,7 @@ import BreadCrumb from "../Components/BreadCrumb";
 import Meta from "../Components/Meta";
 import ReactStars from "react-rating-stars-component";
 import ProductCard from "../Components/ProductCard";
-import Color from "../Components/Color";
+
 import watch from "../assets/images/watch.jpg";
 import gr4 from "../assets/images/gr4.svg";
 import Container from "../Components/Container";
@@ -79,70 +79,7 @@ const OurStore = () => {
                       <label htmlFor="floatingInput1">To</label>
                     </div>
                   </div>
-                  <h5 className="sub-title">Colors</h5>
-                  <div>
-                    <div className="d-flex flex-wrap">
-                      <Color></Color>
-                    </div>
-                  </div>
-                  <h5 className="sub-title">Size</h5>
-                  <div>
-                    <div className="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="color-1"
-                      />
-                      <label className="form-check-lable" htmlFor="color-1">
-                        S (3)
-                      </label>
-                    </div>
-                    <div className="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="color-2"
-                      />
-                      <label className="form-check-lable" htmlFor="color-2">
-                        M (2)
-                      </label>
-                    </div>
-                    <div className="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="color-3"
-                      />
-                      <label className="form-check-lable" htmlFor="color-3">
-                        L (0)
-                      </label>
-                    </div>
-                    <div className="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="color-4"
-                      />
-                      <label className="form-check-lable" htmlFor="color-4">
-                        XL (4)
-                      </label>
-                    </div>
-                    <div className="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="color-5"
-                      />
-                      <label className="form-check-lable" htmlFor="color-5">
-                        XXL (0)
-                      </label>
-                    </div>
-                  </div>
+
                 </div>
               </div>
               <div className="filter-card mb-3">
